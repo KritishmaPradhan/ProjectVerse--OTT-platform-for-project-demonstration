@@ -1,0 +1,126 @@
+[
+  {
+    "id": "khoj",
+    "title": "Khoj",
+    "tagline": "An AI-powered cognitive search & intelligent retrieval engine.",
+    "description": "Khoj is an advanced search and discovery platform that utilizes machine learning and vector embeddings to locate hidden or forgotten information across scattered databases. By mapping semantic meaning rather than just keywords, Khoj understands user intent to deliver hyper-relevant search results instantly.",
+    "problemStatement": "Traditional search systems rely heavily on exact keyword matching, which fails when users don't know the exact vocabulary used. Additionally, documents scattered across various formats (PDFs, Markdown, logs) are hard to query in a unified, context-aware manner.",
+    "features": [
+      "Semantic Search via Vector Embeddings",
+      "Multi-source Document Indexing (PDF, Markdown, Web)",
+      "Interactive AI Chat & Q&A Assistant",
+      "Local-First Privacy Architecture",
+      "Sub-100ms Query Latency with HNSW Indexes"
+    ],
+    "techStack": ["Python", "FastAPI", "SentenceTransformers", "Qdrant", "React"],
+    "category": "AI & Machine Learning",
+    "duration": "16 Weeks",
+    "year": "2026",
+    "language": "Python",
+    "framework": "FastAPI",
+    "poster": "images/posters/khoj.jpg",
+    "banner": "images/banners/khoj.jpg",
+    "screenshots": [
+      "images/screenshots/khoj_dashboard.jpg",
+      "images/screenshots/khoj_search.jpg"
+    ],
+    "demoVideo": "videos/demos/khoj.mp4",
+    "challenges": "Implementing real-time index updates without blocking ongoing queries was a major bottleneck. Initial vector searches took over 800ms due to unoptimized similarity calculations.",
+    "learned": "I mastered the HNSW (Hierarchical Navigable Small World) graphs and index sharding. I also gained deep knowledge of fine-tuning SentenceTransformer models for domain-specific vocabulary.",
+    "githubUrl": "https://github.com/KritishmaPradhan/khoj",
+    "liveUrl": "https://khoj-ai.example.com"
+  },
+  {
+    "id": "hastakala",
+    "title": "Hastakala",
+    "tagline": "Connecting traditional Nepalese artisans with global craft enthusiasts.",
+    "description": "Hastakala is a premium e-commerce marketplace dedicated to traditional handmade crafts. The platform empowers local artisans by giving them a direct-to-consumer store, cutting out middle-men, and providing secure escrow payment options alongside rich, interactive storytelling about the origins of each craft.",
+    "problemStatement": "Indigenous artisans often live in remote areas with limited access to modern digital commerce, leaving them dependent on local middlemen who take high commissions. Furthermore, buyers lack transparency regarding the authenticity and ethical sourcing of traditional crafts.",
+    "features": [
+      "Artisan Shopfronts & Bio Pages",
+      "Interactive Provenance Map (Origin of Materials)",
+      "Multi-currency & Escrow Payment Gateway",
+      "Dynamic AR Viewer for Crafts & Pottery",
+      "Real-time Inventory & Shipping Tracker"
+    ],
+    "techStack": ["JavaScript", "Node.js", "Express", "MongoDB", "Three.js"],
+    "category": "Web Applications",
+    "duration": "10 Weeks",
+    "year": "2026",
+    "language": "JavaScript",
+    "framework": "Express",
+    "poster": "images/posters/hastakala.jpg",
+    "banner": "images/banners/hastakala.jpg",
+    "screenshots": [
+      "images/screenshots/hastakala_home.jpg",
+      "images/screenshots/hastakala_product.jpg"
+    ],
+    "demoVideo": "videos/demos/hastakala.mp4",
+    "challenges": "Integrating a stable 3D viewer (Three.js) that performs well on low-end mobile devices without draining the battery or lagging during user interactions.",
+    "learned": "Optimized low-poly 3D models and simplified texture loading routines, achieving a smooth 60fps on mobile. I also learned secure payment flows using Stripe escrows.",
+    "githubUrl": "https://github.com/KritishmaPradhan/hastakala",
+    "liveUrl": "https://hastakala.example.com"
+  },
+  {
+    "id": "chatsphere",
+    "title": "ChatSphere",
+    "tagline": "Real-time communication with virtual rooms and dynamic theme syncing.",
+    "description": "ChatSphere is a real-time messaging, audio calling, and collaboration platform. It offers sleek custom-themed chat rooms where users can share code snippets with syntax highlighting, collaborate on whiteboards, and send media in lightning-fast channels using WebSockets.",
+    "problemStatement": "Most casual messaging web apps lack tools tailored for developers, such as seamless multi-language code editors, real-time board collaboration, and custom ambient lighting corresponding to room vibes or focus states.",
+    "features": [
+      "Instant WebSocket Messaging with Socket.io",
+      "Collaborative Code Editor with Live Syntax Highlighting",
+      "Interactive SVG Sketchpad & Whiteboard",
+      "Dynamic Ambient Interface & Soundscapes",
+      "Encrypted Direct & Channel Messaging"
+    ],
+    "techStack": ["JavaScript", "React", "Node.js", "Socket.io", "Tailwind CSS"],
+    "category": "Web Applications",
+    "duration": "8 Weeks",
+    "year": "2026",
+    "language": "JavaScript",
+    "framework": "React",
+    "poster": "images/posters/chatsphere.jpg",
+    "banner": "images/banners/chatsphere.jpg",
+    "screenshots": [
+      "images/screenshots/chatsphere_chat.jpg",
+      "images/screenshots/chatsphere_editor.jpg"
+    ],
+    "demoVideo": "videos/demos/chatsphere.mp4",
+    "challenges": "Managing concurrent cursor positions and text edits in the collaborative-sharing editor without race conditions or character overriding.",
+    "learned": "I implemented Operational Transformation (OT) concept and integrated conflict-free replicated data types (CRDTs). I also refined React's render cycles to optimize highly dynamic UI elements.",
+    "githubUrl": "https://github.com/KritishmaPradhan/chatsphere",
+    "liveUrl": "https://chatsphere.example.com"
+  },
+  {
+    "id": "lostfound",
+    "title": "Lost & Found",
+    "tagline": "A smart, localized portal to report, track, and recover items.",
+    "description": "Lost & Found is a community-driven locator portal tailored for college campuses. It allows users to report lost or found items, classify them via auto-tagging, set security-conscious blur thresholds for claim validation, and securely negotiate drop-off locations.",
+    "problemStatement": "Lost-and-found systems in communities are often fragmented, relying on physical bulletin boards, chat groups, or emails. This results in poor recovery rates, identity leak issues on public forums, and lack of verified claims.",
+    "features": [
+      "AI Tagging & Smart Categorization",
+      "Secure Claim Validation & Image Blur Mechanism",
+      "Dev Tunnel Integration for Mobile Access",
+      "Real-time Matches Notification via Push",
+      "Privacy-first User Intercom System"
+    ],
+    "techStack": ["JavaScript", "PHP", "Laravel", "React", "MySQL"],
+    "category": "Web Applications",
+    "duration": "12 Weeks",
+    "year": "2026",
+    "language": "JavaScript",
+    "framework": "React",
+    "poster": "images/posters/lostfound.jpg",
+    "banner": "images/banners/lostfound.jpg",
+    "screenshots": [
+      "images/screenshots/lostfound_feed.jpg",
+      "images/screenshots/lostfound_claim.jpg"
+    ],
+    "demoVideo": "videos/demos/lostfound.mp4",
+    "challenges": "Securing cross-port CORS and CSRF authentication under dev-tunnels for remote mobile checking while protecting sensitive user profiles from malicious claims.",
+    "learned": "Configured robust Vite proxies, Laravel Sanctum token exemptions, and implemented detailed cryptographic verification tags for user claim verification.",
+    "githubUrl": "https://github/KritishmaPradhan/lost-and-found",
+    "liveUrl": ""
+  }
+]

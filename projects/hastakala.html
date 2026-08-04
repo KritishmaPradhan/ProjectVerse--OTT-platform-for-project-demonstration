@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Production Details for Hastakala. Connecting traditional Nepalese artisans with global craft enthusiasts.">
+  <title>Hastakala - ProjectVerse</title>
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Loading Animation Screen -->
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-spinner"></div>
+    <div class="loader-logo">PROJECTVERSE</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="app-header scrolled" id="appHeader">
+    <div class="nav-container">
+      <a href="../index.html" class="logo-link">
+        <span class="logo-icon">P</span>
+        <span>Project<span class="gradient-text">Verse</span></span>
+      </a>
+
+      <!-- Hamburger Menu for mobile screens -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="../index.html#projects">Projects</a></li>
+        <li class="nav-item"><a href="../about.html">About & Credits</a></li>
+        <li class="nav-item"><a href="../contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="search-trigger" aria-label="Open Search">🔍</button>
+        <div class="profile-trigger">K</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Large Subpage Cinematic Hero -->
+  <section class="detail-hero" id="hero" style="background: linear-gradient(to top, var(--bg-color) 0%, rgba(8,1,15,0.4) 100%), radial-gradient(circle at center, rgba(171, 24, 90, 0.2) 0%, transparent 70%);">
+    <div class="detail-hero-content animate-fade-in-up">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        <span>WEB APPLICATIONS</span>
+      </div>
+      <h1 class="hero-title">Hastakala</h1>
+      <p class="hero-desc" style="max-width: 700px; margin-bottom: 0;">Connecting traditional Nepalese artisans with global craft enthusiasts.</p>
+    </div>
+  </section>
+
+  <!-- Project Split-layout -->
+  <main class="section-container" style="padding-top: 20px;">
+    <div class="detail-layout-grid reveal">
+      
+      <!-- Left side: Description blocks -->
+      <div class="detail-main-flow">
+        
+        <!-- Video demonstration wrap -->
+        <div class="detail-video-wrapper">
+          <div class="custom-player" style="aspect-ratio: 16/9; position: relative;">
+            <div class="poster-placeholder" style="cursor: pointer;" onclick="window.openVideoModal('../videos/demos/hastakala.mp4')">
+              <div class="overlay-play" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 0 30px var(--accent-secondary); background: var(--accent-secondary);">▶</div>
+              <span style="font-size: 0.95rem; font-weight: 700; margin-top: 16px; color: var(--text-primary); letter-spacing: 0.05em;">WATCH CINEMATIC DEMONSTRATION</span>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Voice-Over Narration Included</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>🎬</span> Overview</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">
+            Hastakala is a premium e-commerce marketplace dedicated to traditional handmade crafts. The platform empowers local artisans by giving them a direct-to-consumer store, cutting out middle-men, and providing secure escrow payment options alongside rich, interactive storytelling about the origins of each craft.
+          </p>
+        </section>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>⚠️</span> Problem Statement</h2>
+          <p style="color: var(--text-secondary);">
+            Indigenous artisans often live in remote areas with limited access to modern digital commerce, leaving them dependent on local middlemen who take high commissions. Furthermore, buyers lack transparency regarding the authenticity and ethical sourcing of traditional crafts.
+          </p>
+        </section>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>✨</span> Key Features</h2>
+          <ul class="detail-features-list">
+            <li>Artisan Shopfronts & Bio Pages</li>
+            <li>Interactive Provenance Map (Origin of Materials)</li>
+            <li>Multi-currency & Escrow Payment Gateway</li>
+            <li>Dynamic AR Viewer for Crafts & Pottery</li>
+            <li>Real-time Inventory & Shipping Tracker</li>
+          </ul>
+        </section>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>📷</span> Screenshot Gallery</h2>
+          <div class="gallery-grid">
+            <div class="gallery-thumbnail">
+              <div class="poster-placeholder">
+                <span style="font-size: 2rem;">🛍️</span>
+                <span style="font-size: 0.8rem; font-weight: 700;">Artisan Storefront</span>
+              </div>
+            </div>
+            <div class="gallery-thumbnail">
+              <div class="poster-placeholder">
+                <span style="font-size: 2rem;">🗺️</span>
+                <span style="font-size: 0.8rem; font-weight: 700;">Interactive Provenance Map</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>🔥</span> Challenges Faced</h2>
+          <p style="color: var(--text-secondary);">
+            Integrating a stable 3D viewer (Three.js) that performs well on low-end mobile devices without draining the battery or lagging during user interactions was the biggest hurdle. Initial loading times for 3D meshes exceeded 6 seconds under normal connections.
+          </p>
+        </section>
+
+        <section class="detail-section-block">
+          <h2 class="detail-block-title"><span>🧠</span> What I learned</h2>
+          <p style="color: var(--text-secondary);">
+            I optimized low-poly 3D models and simplified texture loading routines, achieving a smooth 60fps on mobile. I also learned secure payment flows using Stripe escrows and tokenization methods.
+          </p>
+        </section>
+      </div>
+
+      <!-- Right side: Sidebar metadata details -->
+      <div class="detail-sidebar">
+        
+        <div class="sidebar-meta-card">
+          <h3 style="font-size: 1.1rem; margin-bottom: 20px; font-weight: 750;">Production Meta</h3>
+          
+          <div class="meta-row">
+            <span class="meta-label">Director</span>
+            <span class="meta-val">K. Pradhan</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Release Year</span>
+            <span class="meta-val">2026</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Running Time</span>
+            <span class="meta-val">10 Weeks</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Category</span>
+            <span class="meta-val">E-Commerce Marketplace</span>
+          </div>
+          
+          <div style="margin-top: 24px;">
+            <span class="meta-label" style="display: block; margin-bottom: 12px;">Core Technologies</span>
+            <div class="tech-stack-row">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Three.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <a href="https://github.com/KritishmaPradhan/hastakala" target="_blank" class="btn btn-primary" style="width: 100%;">
+            <span>🐙</span> GitHub Repository
+          </a>
+          <a href="https://hastakala.example.com" target="_blank" class="btn btn-secondary" style="width: 100%;">
+            <span>🚀</span> Launch Production
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Related projects listings -->
+    <section class="reveal" style="margin-top: 80px;">
+      <h2 class="row-title">Related Projects</h2>
+      <div class="cards-carousel-container" style="margin-top: 30px;">
+        <div class="cards-carousel">
+          
+          <a href="chatsphere.html" class="project-card card-lift">
+            <div class="card-poster-wrapper">
+              <div class="poster-placeholder">
+                <div class="poster-logo">CS</div>
+                <span style="font-size: 0.8rem; letter-spacing: 0.05em; font-weight: 700;">CHATSPHERE</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3 class="card-title">ChatSphere</h3>
+                <span class="card-duration">8 Weeks</span>
+              </div>
+              <div class="card-tech-list">
+                <span class="card-tech-tag">React</span>
+                <span class="card-tech-tag">Socket.io</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="lostfound.html" class="project-card card-lift">
+            <div class="card-poster-wrapper">
+              <div class="poster-placeholder">
+                <div class="poster-logo">LF</div>
+                <span style="font-size: 0.8rem; letter-spacing: 0.05em; font-weight: 700;">LOST & FOUND</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3 class="card-title">Lost & Found</h3>
+                <span class="card-duration">12 Weeks</span>
+              </div>
+              <div class="card-tech-list">
+                <span class="card-tech-tag">React</span>
+                <span class="card-tech-tag">Laravel</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Client-Side Search Full Screen Modal -->
+  <div class="search-fullscreen" id="searchFullscreen">
+    <button class="search-close-btn" id="searchCloseBtn" aria-label="Close search">✕</button>
+    <div class="search-header-box">
+      <span class="search-icon-inside">🔍</span>
+      <input type="text" class="search-input-field" id="searchInputField" placeholder="Search by project name, category, or stack tag...">
+    </div>
+    <div class="filter-group-wrapper">
+      <span class="filter-group-title">Filter by Category</span>
+      <div class="filter-elements" id="filterCategoryList"></div>
+    </div>
+    <div class="filter-group-wrapper">
+      <span class="filter-group-title">Filter by Language</span>
+      <div class="filter-elements" id="filterLanguageList"></div>
+    </div>
+    <div class="filter-group-wrapper">
+      <span class="filter-group-title">Filter by Framework</span>
+      <div class="filter-elements" id="filterFrameworkList"></div>
+    </div>
+    <div class="filter-group-wrapper">
+      <span class="filter-group-title">Filter by Release Year</span>
+      <div class="filter-elements" id="filterYearList"></div>
+    </div>
+    <section class="search-results-section">
+      <h3 class="search-results-heading" id="searchResultsHeading">All Catalog Projects</h3>
+      <div class="search-results-grid" id="searchResultsGrid"></div>
+    </section>
+  </div>
+
+  <!-- Ambient Custom Video Player Overlay -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="window.closeVideoModal()">&times;</button>
+      <div class="custom-player" id="customPlayerFrame">
+        <video id="customPlayerVideo" preload="metadata"></video>
+        <div class="player-controls-bar">
+          <div class="progress-timeline" id="progressTimeline">
+            <div class="progress-playhead" id="progressPlayhead"></div>
+          </div>
+          <div class="player-buttons">
+            <div class="player-controls-left">
+              <button class="player-btn" id="playerPlayPause">▶</button>
+              <button class="player-btn" id="playerMute">🔊</button>
+              <div class="time-display" id="playerTimeDisplay">0:00 / 0:00</div>
+            </div>
+            <div class="player-controls-right">
+              <button class="player-btn" id="playerFullscreen">Fullscreen ⛶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer block -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link">
+          <span class="logo-icon">P</span>
+          <span>Project<span class="gradient-text">Verse</span></span>
+        </a>
+        <p class="footer-desc">
+          An OTT-inspired visual directory designed to showcase premium software architectures and voiceover-guided demonstrations.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-links-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Featured Projects</a></li>
+          <li><a href="../about.html">About & Credits</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-links-title">Production Credit Roles</h4>
+        <div class="credits-grid">
+          <div>
+            <div class="credit-role">Director</div>
+            <div class="credit-name">Kritishma Pradhan</div>
+          </div>
+          <div>
+            <div class="credit-role">Developer</div>
+            <div class="credit-name">Kritishma Pradhan</div>
+          </div>
+          <div>
+            <div class="credit-role">UI Designer</div>
+            <div class="credit-name">Kritishma Pradhan</div>
+          </div>
+          <div>
+            <div class="credit-role">Narrator</div>
+            <div class="credit-name">Kritishma Pradhan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ProjectVerse. Developed by Kritishma Pradhan. All rights reserved.</p>
+      <p>System Time: 2026 / Nepal UTC+5:45</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/projects.js"></script>
+  <script src="../js/player.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
