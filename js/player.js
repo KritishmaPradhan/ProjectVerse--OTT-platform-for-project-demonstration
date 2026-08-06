@@ -9,7 +9,6 @@ function initializePlayer() {
   const video = document.getElementById('customPlayerVideo');
   const playPauseBtn = document.getElementById('playerPlayPause');
   const muteBtn = document.getElementById('playerMute');
-  const fullscreenBtn = document.getElementById('playerFullscreen');
   const progressTimeline = document.getElementById('progressTimeline');
   const progressPlayhead = document.getElementById('progressPlayhead');
   const timeDisplay = document.getElementById('playerTimeDisplay');
@@ -120,24 +119,5 @@ function initializePlayer() {
       video.muted = !video.muted;
       muteBtn.innerHTML = video.muted ? '🔇' : '🔊';
     });
-  }
-
-  // Fullscreen configuration
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      if (customPlayerFrame.requestFullscreen) {
-        customPlayerFrame.requestFullscreen();
-      } else if (customPlayerFrame.webkitRequestFullscreen) {
-        customPlayerFrame.webkitRequestFullscreen(); // Safari
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-    }
-  };
-
-  if (fullscreenBtn) {
-    fullscreenBtn.addEventListener('click', toggleFullscreen);
   }
 }

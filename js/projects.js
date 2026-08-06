@@ -94,7 +94,7 @@ const ProjectsAPI = {
         "framework": "React",
         "poster": "images/posters/chatsphere.jpg",
         "banner": "images/banners/chatsphere.jpg",
-        "demoVideo": "videos/demos/chatsphere.mp4",
+        "demoVideo": "videos/demos/chatspheredemo.mp4",
         "githubUrl": "https://github.com/KritishmaPradhan/chatsphere"
       },
       {

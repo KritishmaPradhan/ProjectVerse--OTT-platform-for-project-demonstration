@@ -18,11 +18,11 @@
     "year": "2026",
     "language": "Python",
     "framework": "FastAPI",
-    "poster": "images/posters/khoj.jpg",
-    "banner": "images/banners/khoj.jpg",
+    "poster": "images/posters/khoj.png",
+    "banner": "images/banners/khoj.png",
     "screenshots": [
-      "images/screenshots/khoj_dashboard.jpg",
-      "images/screenshots/khoj_search.jpg"
+      "images/screenshots/khoj_dashboard.png",
+      "images/screenshots/khoj_search.png"
     ],
     "demoVideo": "videos/demos/khoj.mp4",
     "challenges": "Implementing real-time index updates without blocking ongoing queries was a major bottleneck. Initial vector searches took over 800ms due to unoptimized similarity calculations.",
@@ -49,11 +49,11 @@
     "year": "2026",
     "language": "JavaScript",
     "framework": "Express",
-    "poster": "images/posters/hastakala.jpg",
-    "banner": "images/banners/hastakala.jpg",
+    "poster": "images/posters/hastakala.png",
+    "banner": "images/banners/hastakala.png",
     "screenshots": [
-      "images/screenshots/hastakala_home.jpg",
-      "images/screenshots/hastakala_product.jpg"
+      "images/screenshots/hastakala.png",
+      "images/screenshots/hastakala.png"
     ],
     "demoVideo": "videos/demos/hastakala.mp4",
     "challenges": "Integrating a stable 3D viewer (Three.js) that performs well on low-end mobile devices without draining the battery or lagging during user interactions.",
@@ -80,13 +80,13 @@
     "year": "2026",
     "language": "JavaScript",
     "framework": "React",
-    "poster": "images/posters/chatsphere.jpg",
-    "banner": "images/banners/chatsphere.jpg",
+    "poster": "images/posters/chatsphere.png",
+    "banner": "images/banners/chatsphere.png",
     "screenshots": [
-      "images/screenshots/chatsphere_chat.jpg",
-      "images/screenshots/chatsphere_editor.jpg"
+      "images/screenshots/chatsphere_chat.png",
+      "images/screenshots/chatsphere_editor.png"
     ],
-    "demoVideo": "videos/demos/chatsphere.mp4",
+    "demoVideo": "videos/demos/chatspheredemo.mp4",
     "challenges": "Managing concurrent cursor positions and text edits in the collaborative-sharing editor without race conditions or character overriding.",
     "learned": "I implemented Operational Transformation (OT) concept and integrated conflict-free replicated data types (CRDTs). I also refined React's render cycles to optimize highly dynamic UI elements.",
     "githubUrl": "https://github.com/KritishmaPradhan/chatsphere",
@@ -111,11 +111,11 @@
     "year": "2026",
     "language": "JavaScript",
     "framework": "React",
-    "poster": "images/posters/lostfound.jpg",
-    "banner": "images/banners/lostfound.jpg",
+    "poster": "images/posters/lostfound.png",
+    "banner": "images/banners/lostfound.png",
     "screenshots": [
-      "images/screenshots/lostfound_feed.jpg",
-      "images/screenshots/lostfound_claim.jpg"
+      "images/screenshots/lostfound_feed.png",
+      "images/screenshots/lostfound_claim.png"
     ],
     "demoVideo": "videos/demos/lostfound.mp4",
     "challenges": "Securing cross-port CORS and CSRF authentication under dev-tunnels for remote mobile checking while protecting sensitive user profiles from malicious claims.",

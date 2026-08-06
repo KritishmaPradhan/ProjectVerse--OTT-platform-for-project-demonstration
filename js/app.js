@@ -70,9 +70,9 @@ function renderFeaturedHero(projects) {
   const heroSection = document.getElementById('hero');
   if (!heroSection) return;
 
-  // Let's choose "lostfound" or "khoj" as the main billboard item
-  const featured = projects.find(p => p.id === 'lostfound') || projects[0];
-  if (!featured) return;
+  // // Let's choose "lostfound" or "khoj" as the main billboard item
+  // const featured = projects.find(p => p.id === 'lostfound') || projects[0];
+  // if (!featured) return;
 
   const appTitle = document.getElementById('heroProjectTitle');
   const appDesc = document.getElementById('heroProjectDesc');
