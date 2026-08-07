@@ -126,12 +126,44 @@ function setupSmoothPageTransitions() {
   transitionOverlay.className = 'page-transition-overlay';
   document.body.appendChild(transitionOverlay);
 
-  const links = document.querySelectorAll('a:not([target="_blank"]):not([href^="#"])');
+  const links = document.querySelectorAll('a:not([target="_blank"])');
   
   links.forEach(link => {
     link.addEventListener('click', (e) => {
       const destination = link.getAttribute('href');
       if (!destination || destination.startsWith('javascript:')) return;
+
+      // Check if destination URL points to current page (e.g. index.html#projects while on index.html)
+      try {
+        const targetUrl = new URL(destination, window.location.href);
+        const isSamePage = targetUrl.origin === window.location.origin && targetUrl.pathname === window.location.pathname;
+
+        if (isSamePage) {
+          e.preventDefault();
+          // Close mobile menu if active
+          const navMenu = document.getElementById('navMenu');
+          const menuToggle = document.getElementById('menuToggle');
+          if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            if (menuToggle) menuToggle.textContent = '☰';
+          }
+
+          if (targetUrl.hash) {
+            const targetElement = document.querySelector(targetUrl.hash);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+              history.pushState(null, null, targetUrl.hash);
+            }
+          } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            history.pushState(null, null, ' ');
+          }
+          return;
+        }
+      } catch (err) {
+        // Fallback for relative hash if URL parsing fails
+        if (destination.startsWith('#')) return;
+      }
       
       e.preventDefault();
       transitionOverlay.classList.add('active');
@@ -142,11 +174,47 @@ function setupSmoothPageTransitions() {
     });
   });
 
-  // Slide-down overlay on page entrance
+  // Reset overlay on entrance
   window.addEventListener('pageshow', (event) => {
-    // If page is restored from cache, make sure overlay is reset
-    if (event.persisted) {
-      transitionOverlay.classList.remove('active');
+    transitionOverlay.classList.remove('active');
+  });
+
+  setupGalleryLightbox();
+}
+
+// Lightbox preview modal for gallery screenshots
+function setupGalleryLightbox() {
+  document.addEventListener('click', (e) => {
+    const thumbnail = e.target.closest('.gallery-thumbnail');
+    if (!thumbnail) return;
+    const img = thumbnail.querySelector('img');
+    if (!img || img.style.display === 'none' || !img.src) return;
+
+    let lightbox = document.getElementById('galleryLightbox');
+    if (!lightbox) {
+      lightbox = document.createElement('div');
+      lightbox.id = 'galleryLightbox';
+      lightbox.className = 'lightbox-modal';
+      lightbox.innerHTML = `
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+          <button class="lightbox-close">&times;</button>
+          <img src="" alt="Enlarged screenshot" class="lightbox-img">
+        </div>
+      `;
+      document.body.appendChild(lightbox);
+
+      lightbox.addEventListener('click', (evt) => {
+        if (evt.target.classList.contains('lightbox-overlay') || evt.target.classList.contains('lightbox-close')) {
+          lightbox.classList.remove('active');
+        }
+      });
+    }
+
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    if (lightboxImg) {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
     }
   });
 }

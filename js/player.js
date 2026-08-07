@@ -77,6 +77,42 @@ function initializePlayer() {
     toggleFullscreen();
   });
 
+  const btnFullscreen = document.getElementById('playerFullscreen');
+  if (btnFullscreen) {
+    btnFullscreen.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+
+  const btnBack = document.getElementById('playerBack');
+  if (btnBack) {
+    btnBack.addEventListener('click', (e) => {
+      e.stopPropagation();
+      window.closeVideoModal();
+    });
+  }
+
+  function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      if (customPlayerFrame.requestFullscreen) {
+        customPlayerFrame.requestFullscreen();
+      } else if (customPlayerFrame.webkitRequestFullscreen) {
+        customPlayerFrame.webkitRequestFullscreen();
+      } else if (customPlayerFrame.msRequestFullscreen) {
+        customPlayerFrame.msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  }
+
   // Track progress loading updates
   video.addEventListener('timeupdate', () => {
     if (video.duration) {

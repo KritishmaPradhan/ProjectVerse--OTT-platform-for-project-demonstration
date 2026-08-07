@@ -156,8 +156,8 @@ function renderCategoryRows(projects) {
         <div class="card-info">
           <div class="card-title-row">
             <h3 class="card-title">${project.title}</h3>
-            <span class="card-duration">${project.duration}</span>
           </div>
+          <p class="card-tagline">${project.tagline}</p>
           <div class="card-tech-list">
             ${project.techStack.map(t => `<span class="card-tech-tag">${t}</span>`).join('')}
           </div>

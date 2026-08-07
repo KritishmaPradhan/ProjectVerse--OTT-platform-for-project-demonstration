@@ -65,8 +65,8 @@
         <!-- Video demonstration wrap -->
         <div class="detail-video-wrapper">
           <div class="custom-player" style="aspect-ratio: 16/9; position: relative;">
-            <div class="poster-placeholder" style="cursor: pointer;" onclick="window.openVideoModal('../videos/demos/khoj.mp4')">
-              <div class="overlay-play" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 0 30px var(--accent-secondary); background: var(--accent-secondary);">▶</div>
+            <div class="poster-placeholder" style="cursor: pointer; background: linear-gradient(rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.697)), url('../images/posters/khoj.png') center/cover no-repeat;" onclick="window.openVideoModal('../videos/demos/khoj.mp4')">
+              <div class="overlay-play" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 0 10px rgba(255, 255, 255, 0.197);background: rgba(255, 255, 255, 0.1);">▶</div>
               <span style="font-size: 0.95rem; font-weight: 700; margin-top: 16px; color: var(--text-primary); letter-spacing: 0.05em;">WATCH CINEMATIC DEMONSTRATION</span>
               <span style="font-size: 0.75rem; color: var(--text-muted);">Voice-Over Narration Included</span>
             </div>
@@ -97,26 +97,7 @@
             <li>Sub-100ms Query Latency with HNSW Indexes</li>
           </ul>
         </section>
-
-        <section class="detail-section-block">
-          <h2 class="detail-block-title"><span>📷</span> Screenshot Gallery</h2>
-          <div class="gallery-grid">
-            <div class="gallery-thumbnail">
-              <!-- Inline gradient placeholder representing mockup screen -->
-              <div class="poster-placeholder">
-                <span style="font-size: 2rem;">📊</span>
-                <span style="font-size: 0.8rem; font-weight: 700;">Vector Analytics View</span>
-              </div>
-            </div>
-            <div class="gallery-thumbnail">
-              <div class="poster-placeholder">
-                <span style="font-size: 2rem;">💬</span>
-                <span style="font-size: 0.8rem; font-weight: 700;">Q&A Chat Interface</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
         <section class="detail-section-block">
           <h2 class="detail-block-title"><span>🔥</span> Challenges Faced</h2>
           <p style="color: var(--text-secondary);">
@@ -224,6 +205,10 @@
               <button class="player-btn" id="playerPlayPause">▶</button>
               <button class="player-btn" id="playerMute">🔊</button>
               <div class="time-display" id="playerTimeDisplay">0:00 / 0:00</div>
+            </div>
+            <div class="player-controls-right">
+              <button class="player-btn" id="playerFullscreen" title="Full Screen" style="font-size: 1.25rem;">⛶</button>
+              <button class="player-btn" id="playerBack" title="Back to Project" style="margin-left: 10px;">✖</button>
             </div>
           </div>
         </div>
