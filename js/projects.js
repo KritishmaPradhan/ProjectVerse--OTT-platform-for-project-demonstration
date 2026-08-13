@@ -43,79 +43,123 @@ const ProjectsAPI = {
 
   getFallbackProjects() {
     return [
-      {
-        "id": "khoj",
-        "title": "Khoj",
-        "tagline": "An AI-powered cognitive search & intelligent retrieval engine.",
-        "description": "Khoj is an advanced search and discovery platform that utilizes machine learning and vector embeddings to locate hidden or forgotten information across scattered databases.",
-        "problemStatement": "Traditional search systems rely heavily on exact keyword matching, which fails when users don't know the exact vocabulary used.",
-        "features": ["Semantic Search via Vector Embeddings", "Multi-source Document Indexing", "Interactive AI Chat Q&A Assistant"],
-        "techStack": ["Python", "FastAPI", "Qdrant", "React"],
-        "category": "AI & Machine Learning",
-        "duration": "16 Weeks",
-        "year": "2026",
-        "language": "Python",
-        "framework": "FastAPI",
-        "poster": "images/posters/khoj.jpg",
-        "banner": "images/banners/khoj.jpg",
-        "demoVideo": "videos/demos/khoj.mp4",
-        "githubUrl": "https://github.com/KritishmaPradhan/khoj"
-      },
-      {
-        "id": "hastakala",
-        "title": "Hastakala",
-        "tagline": "Connecting traditional Nepalese artisans with global craft enthusiasts.",
-        "description": "Hastakala is a premium e-commerce marketplace dedicated to traditional handmade crafts designed to empower local artisans.",
-        "problemStatement": "Indigenous artisans often live in remote areas with limited access to modern digital commerce, leaving them dependent on local middlemen.",
-        "features": ["Artisan Shopfronts", "Interactive Provenance Map", "AR Viewer for Crafts"],
-        "techStack": ["JavaScript", "Node.js", "Express", "Three.js"],
-        "category": "Web Applications",
-        "duration": "10 Weeks",
-        "year": "2026",
-        "language": "JavaScript",
-        "framework": "Express",
-        "poster": "images/posters/hastakala.jpg",
-        "banner": "images/banners/hastakala.jpg",
-        "demoVideo": "videos/demos/hastakala.mp4",
-        "githubUrl": "https://github.com/KritishmaPradhan/hastakala"
-      },
-      {
-        "id": "chatsphere",
-        "title": "ChatSphere",
-        "tagline": "Real-time communication with virtual rooms and dynamic theme syncing.",
-        "description": "ChatSphere is a real-time messaging, audio calling, and collaboration platform offering sleek custom-themed chat rooms.",
-        "problemStatement": "Most casual messaging web apps lack tools tailored for developers, such as seamless multi-language code editors.",
-        "features": ["Instant Messaging", "Collaborative Code Editor", "SVG Sketchpad Overlay"],
-        "techStack": ["JavaScript", "React", "Node.js", "Socket.io"],
-        "category": "Web Applications",
-        "duration": "8 Weeks",
-        "year": "2026",
-        "language": "JavaScript",
-        "framework": "React",
-        "poster": "images/posters/chatsphere.jpg",
-        "banner": "images/banners/chatsphere.jpg",
-        "demoVideo": "videos/demos/chatspheredemo.mp4",
-        "githubUrl": "https://github.com/KritishmaPradhan/chatsphere"
-      },
-      {
-        "id": "lostfound",
-        "title": "Lost & Found",
-        "tagline": "A smart, localized portal to report, track, and recover items.",
-        "description": "Lost & Found is a community-driven locator portal tailored for college campuses allowing easy item tracking.",
-        "problemStatement": "Lost-and-found systems in communities are often fragmented, relying on physical bulletin boards.",
-        "features": ["AI Tagging Integration", "Secure Claim Validation", "Dev Tunnel Access Configuration"],
-        "techStack": ["JavaScript", "Laravel", "React", "MySQL"],
-        "category": "Web Applications",
-        "duration": "12 Weeks",
-        "year": "2026",
-        "language": "JavaScript",
-        "framework": "React",
-        "poster": "images/posters/lostfound.jpg",
-        "banner": "images/banners/lostfound.jpg",
-        "demoVideo": "videos/demos/lostfound.mp4",
-        "githubUrl": "https://github/KritishmaPradhan/lost-and-found"
+  {
+    "id": "khoj",
+    "title": "Khoj",
+    "tagline": "Khoj is a smart, community-driven parking finder and management app that helps users discover, review, and track real-time parking spaces across Nepal",
+    "description": "Khoj is a community-driven smart parking finder and management mobile application developed using Flutter that aims to simplify parking discovery and improve parking management across Nepal.",
+    "problemStatement": "In Nepal, finding parking is often a frustrating experience. Drivers struggle to locate available parking spots, especially in busy urban areas. Existing solutions are fragmented, unreliable, or lack real-time information, making parking a stressful and time-consuming process.",
+    "features": [
+      "Smart Parking: Finder Locate nearby parking spaces with map-based navigation.",
+      "Parking Categorization: Filter by vehicle type, paid/free, public/private, and availability.",
+      "Real-Time Updates: View and report parking availability, crowd levels, and status.",
+      "Community Reviews: Add parking spots, photos, ratings, and reviews.",
+      "Parking Session Tracker: Track vehicle parking time and automatically calculate parking fees."
+    ],
+    "techStack": [
+      "Flutter",
+      "Firebase",
+      "PostgreSQL"
+    ],
+    "category": "Mobile Apps",
+    "duration": "16 Weeks",
+    "year": "2026",
+    "language": "Dart",
+    "framework": "Flutter",
+    "poster": "images/posters/khoj.png",
+    "banner": "images/banners/khoj.png",
+    "demoVideo": "videos/demos/khoj.mp4",
+    "challenges": "Data collection from various sources was a major challenge. Also, implementing real-time updates without blocking ongoing queries was a major bottleneck."
+  },
+  {
+    "id": "hastakala",
+    "title": "Hastakala",
+    "tagline": "A digital home for handmade crafts, creativity, and unique crochet creations.",
+    "description": "Hastakala is a handmade crochet craft e-commerce platform that allows customers to explore and purchase unique handcrafted products online. The platform provides a simple shopping experience with product browsing, categories, wishlist, cart, direct purchase, and order management, while helping bring handmade crochet creations to a wider audience.",
+    "problemStatement": "Handmade crochet products are often sold through social media or physical stores, making it difficult for customers to conveniently browse products, save items, manage purchases, and place orders in one organized platform. Hastakala aims to provide a dedicated digital storefront where customers can easily discover, explore, and purchase handmade crochet products.",
+    "features": [
+      "Product Browsing & Categories",
+      "Product Details & Search",
+      "Wishlist & Shopping Cart",
+      "Buy Now & Checkout",
+      "User Accounts & Order Management"
+    ],
+    "techStack": [
+      "JavaScript",
+      "Django",
+      "sqlite3"
+    ],
+    "category": "Web Applications",
+    "duration": "10 Weeks",
+    "year": "2026",
+    "language": "Python",
+    "framework": "Django",
+    "poster": "images/posters/hastakala.png",
+    "banner": "images/banners/hastakala.png",
+    "demoVideo": "videos/demos/hastakala.mp4",
+    "challenges": "Integrating a payment gateway was a major challenge. Also, implementing real-time updates without blocking ongoing queries was a major bottleneck.",
+    "githubUrl": "https://github.com/KritishmaPradhan/Hastakala-by-K-e-commerce-platform.git"
+  },
+  {
+    "id": "chatsphere",
+    "title": "ChatSphere",
+    "tagline": "Real-time communication with random strangers.",
+    "description": "Chatsphere is a web-based casual video and text chatting platform, where users video chat with random strangers with features like  Aura Points, Daily Streaks, dashboard, AI content moderation.",
+    "problemStatement": "Exposure to inappropriate content, no long term engagement, no proper moderation",
+    "features": [
+      "Instant WebSocket Messaging with Socket.io",
+      "AI Content Moderation(video and text)",
+      "Aura Points System",
+      "Daily Streaks",
+      "Dashboard(admin and user)",
+      "Safer text messaging"
+    ],
+    "techStack": [
+      "Django",
+      "firebase",
+      "webRTC"
+    ],
+    "category": "Web Applications",
+    "duration": "32 Weeks",
+    "year": "2026",
+    "language": "Python",
+    "framework": "Django",
+    "poster": "images/posters/chatsphere.png",
+    "banner": "images/banners/chatsphere.png",
+    "demoVideo": "videos/demos/chatspheredemo.mp4",
+    "challenges": "User privacy and data security, AI content moderation, real-time communication",
+    "githubUrl": "https://github.com/pragyanji/social-interaction-platform.git"
+  },
+  {
+    "id": "lostfound",
+    "title": "Lost & Found",
+    "tagline": "A smart, localized portal to report and recover items.",
+    "description": "The Lost and Found Track System branded FindIT is a full stack web application that allows students of a school/college to report lost or found items and connect with each other through a real-time private chat to verify ownership and reclaim belongings.",
+    "problemStatement": "In today’s fast-paced world, people often lose their belongings, and finding them can be a difficult and time-consuming process.",
+    "features": [
+      "Authentication and access control",
+      "Browse and Search",
+      "Report lost or found items",
+      "Real-time private chat",
+      "Claim validation and verification"
+    ],
+    "techStack": [
+      "Laravel",
+      "React+Vite",
+      "MySQL"
+    ],
+    "category": "Web Applications",
+    "duration": "12 Weeks",
+    "year": "2026",
+    "language": "PHP",
+    "framework": "Laravel",
+    "poster": "images/posters/lostfound.png",
+    "banner": "images/banners/lostfound.png",
+    "demoVideo": "videos/demos/lostfound.mp4",
+    "challenges": "Verifying the identity of the person reporting the item and the person claiming the item was a major challenge.",
+    "githubUrl": "https://github.com/KritishmaPradhan/Lost-and-Found-Tracker---FindIT-Laravel-ReactJS-Project.git"
       }
-    ];
+    ]
   }
 };
 

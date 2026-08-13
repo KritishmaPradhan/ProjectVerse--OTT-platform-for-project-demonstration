@@ -112,7 +112,7 @@ function renderSearchResults(results, container, heading, query) {
     
     // Poster check or elegant inline gradient placeholder
     const posterSrc = project.poster ? `${pathPrefix}${project.poster}` : '';
-    const detailsUrl = `${pathPrefix}projects/${project.id}.html`;
+    const detailsUrl = `${pathPrefix}projects/project.html?id=${project.id}`;
     
     card.innerHTML = `
       <div class="card-poster-wrapper">

@@ -100,7 +100,7 @@ function renderFeaturedHero(projects) {
   }
 
   if (appDetailsBtn) {
-    appDetailsBtn.setAttribute('href', `projects/${featured.id}.html`);
+    appDetailsBtn.setAttribute('href', `projects/project.html?id=${featured.id}`);
   }
 }
 
@@ -135,7 +135,7 @@ function renderCategoryRows(projects) {
     filtered.forEach(project => {
       const card = document.createElement('div');
       card.className = 'project-card card-lift';
-      const detailsUrl = `projects/${project.id}.html`;
+      const detailsUrl = `projects/project.html?id=${project.id}`;
       
       card.innerHTML = `
         <div class="card-poster-wrapper">

@@ -12,7 +12,7 @@ function initializePlayer() {
   const progressTimeline = document.getElementById('progressTimeline');
   const progressPlayhead = document.getElementById('progressPlayhead');
   const timeDisplay = document.getElementById('playerTimeDisplay');
-  const customPlayerFrame = document.querySelector('.custom-player');
+  const customPlayerFrame = document.getElementById('customPlayerFrame');
 
   if (!modal || !video) return;
 
@@ -37,6 +37,12 @@ function initializePlayer() {
   };
 
   window.closeVideoModal = () => {
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+      else if (document.msExitFullscreen) document.msExitFullscreen();
+    }
+    
     modal.classList.remove('active');
     document.body.style.overflow = '';
     video.pause();
