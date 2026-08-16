@@ -114,7 +114,11 @@ function populateProjectDetails(project) {
     githubLink.href = project.githubUrl;
     githubLink.style.display = 'inline-flex';
   }
-
+  const liveLink = document.getElementById('projLive');
+  if (project.liveUrl) {
+    liveLink.href = project.liveUrl;
+    liveLink.style.display = 'inline-flex';
+  }
   // Show content
   document.getElementById('mainContent').style.display = 'block';
   hideLoadingScreen();

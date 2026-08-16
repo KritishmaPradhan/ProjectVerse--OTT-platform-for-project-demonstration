@@ -23,7 +23,6 @@
     "language": "Dart",
     "framework": "Flutter",
     "poster": "images/posters/khoj.png",
-    "banner": "images/banners/khoj.png",
     "demoVideo": "videos/demos/khoj.mp4",
     "challenges": "Data collection from various sources was a major challenge. Also, implementing real-time updates without blocking ongoing queries was a major bottleneck."
   },
@@ -51,7 +50,6 @@
     "language": "Python",
     "framework": "Django",
     "poster": "images/posters/hastakala.png",
-    "banner": "images/banners/hastakala.png",
     "demoVideo": "videos/demos/hastakala.mp4",
     "challenges": "Integrating a payment gateway was a major challenge. Also, implementing real-time updates without blocking ongoing queries was a major bottleneck.",
     "githubUrl": "https://github.com/KritishmaPradhan/Hastakala-by-K-e-commerce-platform.git"
@@ -81,7 +79,6 @@
     "language": "Python",
     "framework": "Django",
     "poster": "images/posters/chatsphere.png",
-    "banner": "images/banners/chatsphere.png",
     "demoVideo": "videos/demos/chatspheredemo.mp4",
     "challenges": "User privacy and data security, AI content moderation, real-time communication",
     "githubUrl": "https://github.com/pragyanji/social-interaction-platform.git"
@@ -110,9 +107,145 @@
     "language": "PHP",
     "framework": "Laravel",
     "poster": "images/posters/lostfound.png",
-    "banner": "images/banners/lostfound.png",
     "demoVideo": "videos/demos/lostfound.mp4",
     "challenges": "Verifying the identity of the person reporting the item and the person claiming the item was a major challenge.",
     "githubUrl": "https://github.com/KritishmaPradhan/Lost-and-Found-Tracker---FindIT-Laravel-ReactJS-Project.git"
+  },
+  {
+    "id": "ethicalwrites",
+    "title": "Ethical Writes",
+    "tagline": "A curated space for literary contribution and browsing",
+    "description": "Ethical Writes is a full stack web application that brings togetherinspiring narratives, poetic musings, and thought-provoking prose from storytellers around the world to post and browse literary creations.",
+    "problemStatement": "Lack of digital platform to showcase literary works",
+    "features": [
+      "Authentication and access control",
+      "Browse literary creations",
+      "Post literary creations"
+    ],
+    "techStack": [
+      "Django",
+      "MVT",
+      "SQLite"
+    ],
+    "category": "Web Applications",
+    "duration": "9 Weeks",
+    "year": "2024",
+    "language": "Python",
+    "framework": "Django",
+    "poster": "images/posters/ethicalwrites.png",
+    "demoVideo": "videos/demos/ethicalwrites.mp4",
+    "challenges": "",
+    "githubUrl": "https://github.com/KritishmaPradhan/ethical-writes.git"
+  },
+  {
+    "id": "brainysnake",
+    "title": "Brainy Snake Game",
+    "tagline": "Learn, Play, and Climb the Leaderboard.",
+    "description": "A console-based educational Snake game built with Python Turtle, inspired by the classic Nokia Snake game. Players control the snake using directional movement and answer quiz questions by eating the food that represents the correct answer.",
+    "problemStatement": "Traditional quiz applications can feel repetitive and lack interactive gameplay, while classic Snake games provide entertainment without a learning component. This project combines both concepts by turning quiz questions into an interactive game mechanic, encouraging players to test their knowledge while playing and competing for higher scores.",
+    "features": [
+      "Classic Snake gameplay with left, right, up, and down movement.",
+      "Arcade gameplay with interactive learning",
+      "User authentication",
+      "High-score tracking",
+      "Leaderboard rankings",
+      "User and admin sections"
+    ],
+    "techStack": [
+      "Python",
+      "Turtle",
+      "SQLite"
+    ],
+    "category": "Games",
+    "duration": "16 Weeks",
+    "year": "2024",
+    "language": "Python",
+    "framework": "Turtle",
+    "poster": "images/posters/brainysnake.png",
+    "demoVideo": "videos/demos/brainysnake.mp4",
+    "challenges": "Integrating quiz logic with real-time Snake gameplay.",
+    "githubUrl": "https://github.com/KritishmaPradhan/The-Brainy-snake-game.git"
+  },
+  {
+    "id": "portfolio",
+    "title": "Personal Portfolio",
+    "tagline": "Portfolio: Where Code Meets Creativity.",
+    "description": "A personal portfolio website designed to showcase my journey in technology and design, featuring my education, technical skills, projects, creative designs, and experience. Built using HTML, CSS, and JavaScript, the portfolio combines a clean modern interface with interactive elements to present both my development and design capabilities.",
+    "problemStatement": "A traditional resume often cannot fully represent both technical abilities and creative work. This portfolio provides an interactive platform to present my skills, projects, education, and designs while giving visitors an easy way to explore my work and get in touch.",
+    "features": [
+      "Interactive home page.",
+      "Education and skills showcase.",
+      "Projects and technical work.",
+      "Graphic design portfolio.",
+      "Contact and social links."
+    ],
+    "techStack": [
+      "HTML/CSS",
+      "CSS",
+      "lottieanimations"
+    ],
+    "category": "UI/UX Designs",
+    "duration": "9 Weeks",
+    "year": "2023",
+    "language": "HTML/CSS",
+    "framework": "",
+    "poster": "images/posters/portfolio.png",
+    "demoVideo": "videos/demos/portfolio.mp4",
+    "challenges": "Balancing technical and creative content",
+    "githubUrl": "https://github.com/KritishmaPradhan/Professional-Portfolio-Kritishma-Pradhan.git",
+    "liveUrl": "https://kritishmapradhan.github.io/Professional-Portfolio-Kritishma-Pradhan/"
+  },
+  {
+    "id": "digitaldiary",
+    "title": "Digital Diary by K",
+    "tagline": "A Little Piece of Me, Designed Digitally.",
+    "description": "A digital diary UI/UX design created in Figma to visually document different aspects of my lifestyle and personality. From personal introductions and favorite foods to travel experiences and handmade creations.",
+    "problemStatement": "Personal memories and everyday experiences are often scattered across different platforms, making them difficult to explore as one cohesive story. This digital diary brings personal interests, experiences, and creative work together in a single thoughtfully designed interface.",
+    "features": [
+      "Personal introduction and profile.",
+      "Food section.",
+      "Travel experiences showcase.",
+      "Handmade creations gallery.",
+      "Interactive navigation."
+    ],
+    "techStack": [
+      "Figma",
+      "Canva"
+    ],
+    "category": "UI/UX Designs",
+    "duration": "2 Weeks",
+    "year": "2024",
+    "poster": "images/posters/digitaldiary.png",
+    "demoVideo": "videos/demos/digitaldiary.mp4",
+    "challenges": "Creating a personal yet cohesive visual style",
+    "liveUrl": "https://www.figma.com/proto/iNI6iEkBXeHnH0Flx9R9Ly/Digital-Diary-Kritishma?node-id=1-2&starting-point-node-id=1%3A2&scaling=contain&content-scaling=fixed"
+  },
+  {
+    "id": "tictactoe",
+    "title": "Tic Tac Toe",
+    "tagline": "Classic Game, Modern Play.",
+    "description": "A web-based Tic Tac Toe game built using HTML, CSS, and JavaScript, combining the classic two-player game with a modern interactive interface. It includes customizable themes and a music toggle to create a more engaging and personalized gaming experience.",
+    "problemStatement": "Traditional Tic Tac Toe offers simple gameplay but often lacks customization and interactive elements. This project enhances the classic experience with a visually engaging interface, theme customization, and optional background music.",
+    "features": [
+      "Interactive two-player gameplay.",
+      "Theme customization option.",
+      "Music on/off toggle.",
+      "Win and draw detection.",
+      "Responsive game interface."
+    ],
+    "techStack": [
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "category": "Mini Projects",
+    "duration": "2 Weeks",
+    "year": "2023",
+    "language": "JavaScript",
+    "framework": "",
+    "poster": "images/posters/tictactoe.png",
+    "demoVideo": "videos/demos/tictactoe.mp4",
+    "challenges": "Designing a responsive game interface",
+    "githubUrl": "https://github.com/KritishmaPradhan/JavaScript-from-Scratch.git",
+    "liveUrl": "https://kritishmapradhan.github.io/JavaScript-from-Scratch/tictaktoe%20game%20js/"
   }
 ]
